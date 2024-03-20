@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      abbr{
+         font-style:italic;
+         color:darkred;   
+      }
+      .voltar{ 
+        border: solid 1px blue;
+    border-radius: 20px;
+    color: blue;
+    background-color: rgb(223, 223, 223);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+     }
+     .voltar:hover{
+        background-color: blue;
+    color: white;
+    transform: scale(1.2)
+     }
+    </style>
+  </head>
+  <body>
+    <h1>Listas no <abbr>HTML</abbr>:</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Exemplo Lista de linguagens web por ordem em números romanos</p>
+    <ol type="I">
+      <li>Html</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ol>
+    <h2>Listas Não Ordenadas</h2>
+    <p>Exemplo linguagens compiladas com estilo "square"</p>
+    <ul style="list-style-type: square;">
+      <li>C</li>
+      <li>C++</li>
+      <li>GO</li>
+      <li>Delphi</li>
+      <li>Rust</li>
+    </ul>
+    <h2>Lista de Termos</h2>
+    <p>Exemplo explicando as princípais linguagens web</p>
+    <dl>
+      <dt>Html</dt>
+      <dd>Linguagem de marcação para paginas web</dd>
+      <dt>Css</dt>
+      <dd>Linguagem de Formatação de estilo para arquivos html</dd>
+      <dt>Javascript</dt>
+      <dd>
+        Linguagem de programação usada principalmente para criar paginas web
+        dinâmicas
+      </dd>
+    </dl>
+    <a href="/primeirosite/html-basico/index.html"><button class="voltar">Voltar</button></a>
+  </body>
+</html>
