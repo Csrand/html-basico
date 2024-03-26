@@ -1,0 +1,16 @@
+abbr{
+        font-style:italic;
+        color:darkred;      
+}
+img{
+    border: solid 3px;
+    border-color: black;
+}
+.logoo{
+    
+    border-radius: 50px;
+    border:solid coral;
+}
+body{
+    background-color: lightr;
+}
