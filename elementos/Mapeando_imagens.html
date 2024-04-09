@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        abbr {
+            font-style: italic;
+            color: darkred;
+        }
+        .voltar{ 
+   border: solid 1px blue;
+border-radius: 20px;
+color: blue;
+background-color: rgb(223, 223, 223);
+transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.voltar:hover{
+   background-color: blue;
+color: white;
+transform: scale(1.2)
+}
+    </style>
+</head>
+
+<body>
+    <h1>Mapeando Imagens no <abbr>HTML</abbr></h1>
+    <div>
+        <p>Escolha uma cor do logo</p>
+    </div>
+    <img src="../imagens/Microsoft_logo.svg.png" alt="logo" align="center" usemap="#mapaMenu">
+    <map name="#mapaMenu">
+        <area shape="rect" coords="22,23,237,239" href="https://www.youtube.com/watch?v=6mc2zb8kTa8" alt="red">
+        <area shape="rect" coords="260,25,475,237" href="http://login.bri.ifsp.edu.br/" alt="green">
+        <area shape="rect" coords="21,262,236,477" href="https://www.google.com.br/" alt="blue">
+        <area shape="rect" coords="262,262,477,477" href="https://csrand.github.io/Como-Plantar-Tomates/" alt="yellow">
+    </map>
+    <br>
+    <a href="/index.html"><button class="voltar">Voltar</button></a>
+</body>
+
+</html>
