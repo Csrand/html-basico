@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Document</title>
+    <style>
+        abbr{
+    font-style:italic;
+    color:darkred;   
+ }
+ .voltar{ 
+   border: solid 1px blue;
+border-radius: 20px;
+color: blue;
+background-color: rgb(223, 223, 223);
+transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.voltar:hover{
+   background-color: blue;
+color: white;
+transform: scale(1.2)
+}
+</style>
 </head>
 <body>
-    
+  <h1>Formulários em <abbr title>HTML</abbr></h1> 
+  <p style="font-weight: bold;">Formularios são formados pelas tags &#60form&#62&#40para definir o formulario&#41 <br>
+     &#60fieldset&#62 &#40para definir um corpo para o formulario&#41 <br>
+     &#60label&#62 &#40para nomear a caixa dos formularios&#41 <br>
+     &#60input&#62 &#40para definir o tipo de entrada nos campos do formulario&#41 
+  </p>
+     <form action="">
+<fieldset>
+    <legend>Example</legend>
+    <label>
+        Email:
+        <input type="text" name="Email" size="20"
+        maxlength="30"/>
+    </label>
+    <br>
+    <label>
+        Password
+        <input type="password">
+</label>
+</fieldset>
+</form> 
+<br>
+ <button class="voltar"><a href="../index.html">Voltar</a></button>
 </body>
 </html>
